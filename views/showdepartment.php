@@ -14,9 +14,18 @@
             <link rel="stylesheet" href="../style.css">
         </head>
         <body>
-            <button onclick="location.href='admindashboard.php';">Admin dashboard</button>
+            <div class="inlineblock">
+                <div class="logout">
+                    <button onclick="location.href='../auth/adminlogout.php';">Logout</button>
+                </div>
+                <div class="gotodashboard">
+                    <button onclick="location.href='admindashboard.php';">Admin Dashboard</button>
+                </div>
+            </div>
             <div class="adddepartment">
-                <h1>Add Department</h1>
+                <div class="adddepartmentheading">
+                    Add Department
+                </div>
                 <form action="../auth/departmentaddbackend.php" method="POST">
                     <input type="text" name="department_name" id="department_name" placeholder="Enter the department name"><br>
                     <input type="text" name="department_username" id="department_username" placeholder="Enter username for department"><br>
@@ -25,7 +34,9 @@
                 </form>
             </div>
             <div class="departmentshow">
-                <h1>Show Departments</h1>
+                <div class="showdepartmentheading">
+                    Show Departments
+                </div>
                 <table>
                     <tr>
                         <th>Department Name</th>
