@@ -23,16 +23,18 @@
             <link rel="stylesheet" href="../style.css">
         </head>
         <body>
-            <h1>User Login Page</h1>
-            <div class="formbody">
+            <div class="loginbox">
+                <div class="loginheading">
+                    User Login Page
+                </div>
                 <form action="../auth/userloginbackend.php" method="POST">
                     <input type="text" name="user_email" id="user_email" placeholder="Enter your email"><br>
                     <input type="password" name="user_password" id="user_password" placeholder="Enter your password"><br>
                     <input type="submit" value="Login" name="login" id="lo  gin">
                 </form>
             </div>
-            <div>
-                <p>Don't have a account. Create <a href="userregistration.php">here!</a></p>
+            <div class="registrationlink">
+                Don't have a account. Create<a href="userregistration.php">here!</a>
             </div>
         </body>
         </html>
