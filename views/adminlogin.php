@@ -28,8 +28,10 @@
             <link rel="stylesheet" href="../style.css">
         </head>
         <body>
-            <h1>Admin Login page</h1>
-            <div class="formbody">
+            <div class="loginbox">
+                <div class="loginheading">
+                    Admin Login Page
+                </div>
                 <form action="../auth/adminloginbackend.php" method="POST">
                     <input type="text" name="admin_username" id="admin_username" placeholder="Enter the username"><br>
                     <input type="password" name="admin_password" id="admin_password" placeholder="Enter the password"><br>
