@@ -15,15 +15,20 @@
             <body>
                 <div class="logout">
                     <button onclick="location.href='../auth/departmentlogout.php';">Logout</button>
+                </div><br><br><br><br>
+                <div class="heading">
+                    Department Dashboard > State of Complains
                 </div>
-                <div id="unprocessedcomplain">
-                    <button onclick="location.href='department_approve_complain.php?state_id=2';">See unprocessed Complains</button>
-                </div>
-                <div id="processingcomplain">
-                    <button onclick="location.href='department_approve_complain.php?state_id=3';">See Procressing Complains</button>
-                </div>
-                <div id="processedcomplain">
-                    <button onclick="location.href='department_view_processed_complain.php?state_id=4';">See Processed Complains</button>
+                <div class="departmentpage">
+                    <div id="unprocessedcomplain" onclick="location.href='department_approve_complain.php?state_id=2';">
+                        See Unprocessed Complains
+                    </div>
+                    <div id="processingcomplain" onclick="location.href='department_approve_complain.php?state_id=3';">
+                        See Procressing Complains
+                    </div>
+                    <div id="processedcomplain" onclick="location.href='department_view_processed_complain.php?state_id=4';">
+                        See Processed Complains
+                    </div>
                 </div>
             </body>
             </html>

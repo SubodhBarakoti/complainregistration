@@ -13,27 +13,32 @@
                 <link rel="stylesheet" href="../style.css">
             </head>
             <body>
-            <div class="logout">
-                <button onclick="location.href='../auth/adminlogout.php';">Logout</button>
-            </div>
-            <div id="departmentadd">
-                <button onclick="location.href='showdepartment.php';">Add department</button>
-            </div>
-            <div id="seeunapprovedcomplain">
-                <button onclick="location.href='admin_approve_complain.php?state_id=1';">See Unapproved Complains</button>
-            </div>
-            <div id="seeapprovedcomplain">
-                <button onclick="location.href='admin_view_complain.php?state_id=2';">See Approved Complains</button>
-            </div>
-            <div id="inprogresscomplain">
-                <button onclick="location.href='admin_view_complain.php?state_id=3';">See Inprogress Complains</button>
-            </div>
-            <div id="completedcomplain">
-                <button onclick="location.href='admin_view_complain.php?state_id=4';">See Completed Complains</button>
-            </div>
-            <div id="rejectedcomplain">
-                <button onclick="location.href='admin_view_complain.php?state_id=5';">See Rejected Complains</button>
-            </div>
+                <div class="logout">
+                    <button onclick="location.href='../auth/adminlogout.php';">Logout</button>
+                </div><br><br><br><br>
+                <div id="departmentadd">
+                    <button onclick="location.href='showdepartment.php';">Add department</button>
+                </div>
+                <div class="heading">
+                    Admin Dashboard > State of Complains
+                </div>
+                <div class="adminpage">
+                    <div id="seeunapprovedcomplain" onclick="location.href='admin_approve_complain.php?state_id=1';">
+                        See Unapproved Complains
+                    </div>
+                    <div id="seeapprovedcomplain" onclick="location.href='admin_view_complain.php?state_id=2';">
+                        See Approved Complains
+                    </div>
+                    <div id="inprogresscomplain" onclick="location.href='admin_view_complain.php?state_id=3';">
+                        See Inprogress Complains
+                    </div>
+                    <div id="completedcomplain" onclick="location.href='admin_view_complain.php?state_id=4';">
+                        See Completed Complains
+                    </div>
+                    <div id="rejectedcomplain" onclick="location.href='admin_view_complain.php?state_id=5';">
+                        See Rejected Complains
+                    </div>
+                </div>
             </body>
             </html>
         <?php
