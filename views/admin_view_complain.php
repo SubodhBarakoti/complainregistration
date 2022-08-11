@@ -2,6 +2,12 @@
     include_once '../connection/connection.php';
     session_start();
     if(!empty($_SESSION['admin_id'])){
+        if(isset($_GET['state_id'])){
+            $state_id = $_GET['state_id'];
+            $sql = "SELECT * FROM state WHERE state_id = '$state_id'";
+            $res = mysqli_query($db_con, $sql);
+            $r = mysqli_fetch_array($res);
+            $state_name = $r['state_name'];
         ?>
         <!DOCTYPE html>
         <html lang="en">
@@ -13,8 +19,16 @@
         <link rel="stylesheet" href="../style.css">
         </head>
         <body>
+            <div class="inlineblock">
+                <div class="logout">
+                    <button onclick="location.href='../auth/adminlogout.php';">Logout</button>
+                </div>
+                <div class="gotodashboard">
+                    <button onclick="location.href='admindashboard.php';">Admin Dashboard</button>
+                </div>
+            </div>
             <div class="approval_State">
-                <h1>Waiting for approval</h1>
+                State of Complain > <?php echo $state_name; ?>
             </div>
             <table>
                 <tr>
@@ -25,8 +39,6 @@
                 </tr>
                 <tr>
                     <?php
-                    if(isset($_GET['state_id'])){
-                        $state_id = $_GET['state_id'];
                         $query="SELECT * FROM complain WHERE state_id = '$state_id'";
                         $result = mysqli_query($db_con,$query);
                         if($result){

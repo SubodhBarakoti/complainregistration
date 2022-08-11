@@ -13,8 +13,16 @@
             <link rel="stylesheet" href="../style.css">
         </head>
         <body>
+            <div class="inlineblock">
+                <div class="logout">
+                    <button onclick="location.href='../auth/adminlogout.php';">Logout</button>
+                </div>
+                <div class="gotodashboard">
+                    <button onclick="location.href='admindashboard.php';">Admin Dashboard</button>
+                </div>
+            </div>
             <div class="approval_State">
-                <h1>Waiting for approval</h1>
+                State of Complain > Waiting for approval
             </div>
             <table>
                 <tr>
