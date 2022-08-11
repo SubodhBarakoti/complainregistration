@@ -12,7 +12,7 @@
         !!  Access Denied  !!
     </div>
     <div class="gotologinpage">
-        <a href="../views/login.php"><button>Go to Login Page</button></a>
+        <a href="../index.php"><button>Go to Login Page</button></a>
     </div>
 </body>
 </html>
