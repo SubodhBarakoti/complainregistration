@@ -8,16 +8,19 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-      <div id="login">
-        <button onclick="location.href='views/login.php';">login</button>
-      </div>  
-    </header>
-    <main>
-
-    </main>
-    <footer>
-
-    </footer>
+    <div class="indexheading">
+        Login As
+    </div>
+    <div class="loginas">
+      <div id="userlogin" class="loginfield" onclick="location.href='views/userlogin.php';">
+          User
+      </div>
+      <div id="adminlogin" class="loginfield" onclick="location.href='views/adminlogin.php';">
+          Admin
+      </div>
+      <div id="departmentlogin" class="loginfield" onclick="location.href='views/departmentlogin.php';">
+          Department
+      </div>
+    </div>
 </body>
 </html>
