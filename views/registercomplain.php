@@ -15,14 +15,25 @@
             <link rel="stylesheet" href="../style.css">
         </head>
         <body>
-            <div class="registercomplain_div">
+            <div class="inlineblock">
+                <div class="logout">
+                    <button onclick="location.href='../auth/userlogout.php';">Logout</button>
+                </div>
+                <div class="gotodashboard">
+                    <button onclick="location.href='userdashboard.php';">User Homepage</button>
+                </div>
+            </div>
+            <div class="registercomplain">
+                <div class="registercomplainheading">
+                    Register a complain
+                </div>
                 <form action="../auth/registercomplainbackend.php" method="POST">
                     <div class="complain_text">
-                        <label for="complain_text">Complain Text</label><br>
-                        <textarea name="complain_text" id="complain_text" cols="30" rows="10"></textarea>
+                        <label for="complain_text" class="complainregistersubheading">Complain Text</label><br>
+                        <textarea name="complain_text" id="complain_text" cols="50" rows="10"></textarea>
                     </div>
                     <div class="complain_department">
-                        <label for="department_id">Complain Department</label>
+                        <label for="department_id" class="complainregistersubheading">Complain Department</label>
                         <select name="department_id" id="department_id">
                             <?php
                                 if($result){
