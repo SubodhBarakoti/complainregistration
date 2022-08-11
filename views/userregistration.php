@@ -1,13 +1,33 @@
 <?php
-    if(isset($_GET['success'])){
+    if(isset($_GET['error'])){
         $turn=0;
         while($turn==0){
-            if($_GET['success']=="true"){
-                echo "<script>alert('Registration Successful')</script>";
+            if($_GET['error']=="true"){
+                echo "<script>alert('Registration Unsucessful')</script>";
+                $turn=1;
+            }
+            else if($_GET['error']=="1"){
+                echo "<script>alert('User with this email address or contact number or citizenship number is already registered')</script>";
+                $turn=1;
+            }
+            else if($_GET['error']=='2'){
+                echo '<script>alert("Please fill the fields with true data")</script>';
+                $turn=1;
+            }
+            else if($_GET['error']=='3'){
+                echo "<script>alert('Error in query')</script>";
+                $turn=1;
+            }
+            else if($_GET['error']=='4'){
+                echo "<script>alert('Registration failed')</script>";
+                $turn=1;
+            }
+            else if($_GET['error']=='5'){
+                echo "<script>alert('Eror while selecting inserted data')</script>";
                 $turn=1;
             }
             else{
-                echo "<script>alert('Registration Failed')</script>";
+                echo "<script>alert('Registration Sucessful')</script>";
                 $turn=1;
             }
         }
