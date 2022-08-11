@@ -13,8 +13,16 @@
             <link rel="stylesheet" href="../style.css">
         </head>
         <body>
+            <div class="inlineblock">
+                <div class="logout">
+                    <button onclick="location.href='../auth/departmentlogout.php';">Logout</button>
+                </div>
+                <div class="gotodashboard">
+                    <button onclick="location.href='departmentdashboard.php';">Department Dashboard</button>
+                </div>
+            </div>
             <div class="approval_State">
-                <h1>Completed Complains</h1>
+                State of Complain > Work Complected
             </div>
             <table>
                 <tr>
