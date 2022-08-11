@@ -1,5 +1,5 @@
 *{
-    margin: 0%;
+    margin: auto 1%;
     padding: 0%;
     font-family: 'Roboto', sans-serif;
 }
@@ -12,7 +12,7 @@
     font-size: 110px;
     font-weight: bold;
     text-align: center;
-    margin-bottom: 5vh;
+    margin-bottom: 5vh; 
 }
 .gotologinpage{
     text-align: center;
@@ -21,11 +21,380 @@ button{
     margin-top: 2vh;
     height: 5vh;
     width: 10vw;
-    background-color: rgb(0, 184, 221);
+    background-color: rgb(0,108,190);
+    color: white;
     border-radius: 10px;
     border: none;
-    color: blue;
     cursor: pointer;
+    font-size: 1.1em;
+}
+.gotologinpage button{
+    background-color: rgb(71, 189, 71);
+    height: 6vh;
+    width: 12vw;
+}
+a{
+    text-decoration: none;
+    color: rgb(0,108,190);
+}
+/* access denied end  */
+
+/* table start */
+table{
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 2vh;
+}
+th, td{
+    text-align: left;
+    padding: 10px 10px;
+}
+tr:nth-child(even){background-color: #f2f2f2}
+th{
+    background-color: rgb(0,108,190);
+    color: white;
+    height: 5vh;
+}
+/* table end  */
+
+/* login page start */
+.loginbox{
+    margin-top: 10vh;
+    padding: 2em 2em 1.5em 2em;
+    text-align: center;
+    width: 33%;
+    margin-left: 30%;
+    background-color: aquamarine;
+    border-radius: 30px;
+}
+.loginheading{
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(0,108,190);
+    margin-bottom: 3vh;
 }
 
-/* access denied end  */
+.loginbox input[type="text"], .loginbox input[type="password"]{
+    width: 70%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: none;
+    border-radius: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 1.1em;
+}
+.loginbox input[type="text"]:hover, .loginbox input[type="password"]:hover{
+    width: 75%;
+    border: none;
+}
+.loginbox input[type="submit"]{
+    width: 20%;
+    background-color: rgb(0,108,190);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    margin-top: 15px;
+    font-size: 1.2em;
+}
+.loginbox input[type="submit"]:hover{
+    background-color: rgb(33, 158, 254);
+    color: white;
+    width: 22%;
+}
+.registrationlink{
+    text-align: center;
+    margin-top: 2vh;
+    font-size: large;
+}
+/* login page end */
+
+/* registration page start */
+
+.registrationbox{
+    margin-top: 5vh;
+    padding: 2em 2em 1.5em 2em;
+    width: 33%;
+    margin-left: 30%;
+    background-color: aquamarine;
+    border-radius: 30px;
+    text-align: center;
+}
+.registrationheading{
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(0,108,190);
+    margin-bottom: 3vh;
+}
+.registrationbox input[type="text"], .registrationbox input[type="password"],.registrationbox input[type="tel"]{
+    width: 70%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: none;
+    border-radius: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 1.1em;
+}
+.registrationbox input[type="text"]:hover, .registrationbox input[type="password"]:hover, .registrationbox input[type="tel"]:hover{
+    width: 75%;
+    border: none;
+    border-radius: 20px;
+}
+.registrationbox input[type="submit"]{
+    width: 23%;
+    background-color: rgb(0,108,190);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    margin-top: 15px;
+    font-size: 1.2em;
+}
+.registrationbox input[type="submit"]:hover{
+    background-color: rgb(33, 158, 254);
+    color: white;
+    width: 25%;
+}
+
+/* registration page end */
+
+/* register complain  starts */
+
+.registercomplain{
+    margin-top: 10vh;
+    padding: 2em 2em 1.5em 2em;
+    width: 33%;
+    margin-left: 30%;
+    background-color: aquamarine;
+    border-radius: 30px;
+    text-align: center;
+}
+.registercomplainheading{
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(0,108,190);
+    margin-bottom: 3vh;
+}
+.complainregistersubheading{
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(0,108,190);
+    margin-top: 3vh;
+}
+.registercomplain textarea, .registercomplain select{
+    width: 70%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: none;
+    border-radius: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 1.1em;
+}
+.registercomplain input[type="submit"]{
+    width: 40%;
+    background-color: rgb(0,108,190);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    margin-top: 15px;
+    font-size: 1.2em;
+}
+.registercomplain input[type="submit"]:hover{
+    background-color: rgb(33, 158, 254);
+    color: white;
+    width: 42%;
+}
+
+
+/* register complain ends  */
+
+
+
+/* index page starts */
+.indexheading{
+    font-size: 60px;
+    font-weight: bold;
+    color: rgb(0,108,190);
+    margin-bottom: 3vh;
+    text-align: center;
+    margin-top: 15vh;
+}
+.loginas{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-top: 5vh;
+    justify-content: space-around;
+}
+.loginfield{
+    background-color: aquamarine;
+    height: 30vh;
+    width: 20vw;
+    font-size: 30px;
+    cursor: pointer;
+    border-radius: 30px;
+    color: rgb(0,108,190);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.loginfield:hover{
+    background-color: rgb(33, 158, 254);
+    color: white;
+}
+/* index page ends */
+
+
+/* add department  starts*/
+
+.adddepartment{
+    margin: 5vh 3vh;
+    width: 33%;
+}
+.adddepartmentheading,.showdepartmentheading{
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(0,108,190);
+    margin-bottom: 1vh;
+}
+.adddepartment input[type="text"], .adddepartment input[type="password"]{
+    width: 60%;
+    padding: 10px 25px;
+    margin: 5px 0;
+    border-radius: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 1.01em;
+}
+.adddepartment input[type="submit"]{
+    width: 20%;
+    background-color: rgb(0,108,190);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 15px;
+    font-size: 1.2em;
+}
+.adddepartment input[type="submit"]:hover{
+    background-color: rgb(33, 158, 254);
+    color: white;
+}
+
+/* add department ends  */
+
+
+/* admin page starts  */
+.heading{
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(0,108,190);
+    margin-bottom: 3vh;
+    text-align: center;
+}
+.adminpage{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    margin-top: 5vh;
+    justify-content: space-around;
+
+}
+.adminpage div{
+    height: 15vh;
+    width: 15vw;
+    padding: 10px;
+    background-color: rgb(41, 249, 235);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 10px;
+    color: rgb(0,108,190);
+    font-size: large;
+}
+.adminpage div:hover{
+    background-color: rgb(0,108,190);
+    color: white;
+}
+
+
+/* admin page ends  */
+
+
+/* department page starts  */
+
+.departmentpage{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-top: 5vh;
+    justify-content: space-around;
+}
+.departmentpage div{
+    height: 25vh;
+    width: 25vw;
+    padding: 15px;
+    background-color: rgb(41, 249, 235);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 10px;
+    color: rgb(0,108,190);
+    font-size: 1.75em;
+}
+.departmentpage div:hover{
+    background-color: rgb(0,108,190);
+    color: white;
+}
+
+/* department page stops  */
+
+
+/* logout and go to dashboard starts  */
+
+.inlineblock{
+    display: flex;
+    flex-direction:row-reverse;
+    justify-content: space-between;
+}
+.logout{
+    float: right;
+}
+.logout button{
+    background-color: rgb(226, 85, 85);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 15px;
+    font-size: 1.2em;
+}
+.gotodashboard button{
+    width: 12em;
+    background-color: rgb(71, 189, 71);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 15px;
+    font-size: 1.2em;
+}
+
+/* logout and go to dashboard ends  */
+
+.approval_State{
+    margin-top: 2vh;
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(0,108,190);
+}
+.register_complain button{
+    width: 12em;
+}
