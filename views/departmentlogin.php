@@ -28,8 +28,10 @@
             <link rel="stylesheet" href="../style.css">
         </head>
         <body>
-            <h1>Department Login page</h1>
-            <div class="formbody">
+            <div class="loginbox">
+                <div class="loginheading">
+                    Department Login Page
+                </div>
                 <form action="../auth/departmentloginbackend.php" method="POST">
                     <input type="text" name="department_username" id="department_username" placeholder="Enter the username"><br>
                     <input type="password" name="department_password" id="department_password" placeholder="Enter the password"><br>
