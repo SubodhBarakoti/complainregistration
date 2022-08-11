@@ -1,5 +1,18 @@
-
 <?php
+    if(isset($_GET['error'])){
+        if($_GET['error'] == 1){
+            echo "<script>alert('Empty complain fields');</script>";
+        }
+        elseif($_GET['error'] == 2){
+            echo "<script>alert('Error in deleting department');</script>";
+        }
+        elseif($_GET['error'] == 'none'){
+            echo "<script>alert('Department deleted sucessfully');</script>";
+        }
+        else{
+            echo "<script>alert('Department added successfully');</script>";
+        }
+    }
     include_once '../connection/connection.php';
     session_start();
     if(!empty($_SESSION['admin_id'])){
@@ -42,6 +55,7 @@
                         <th>Department Name</th>
                         <th>Department Username</th>
                         <th>Department Password</th>
+                        <!-- <th>Delete Department</th> -->
                     </tr>
                     <?php
                         include_once '../connection/connection.php';
@@ -52,6 +66,7 @@
                             echo "<td>".$row['department_name']."</td>";
                             echo "<td>".$row['department_username']."</td>";
                             echo "<td>".$row['department_password']."</td>";
+                            echo "<td><a href='../auth/departmentdeletebackend.php?department_id=".$row['department_id']."'>Delete</a></td>";
                             echo "</tr>";
                         }
                     ?>

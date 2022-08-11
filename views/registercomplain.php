@@ -1,4 +1,9 @@
 <?php
+    if(isset($_GET['error'])){
+        if($_GET['error'] == 1){
+            echo "<script>alert('Empty complain fields');</script>";
+        }
+    }
     include_once '../connection/connection.php';
     $query = "SELECT * FROM department";
     $result = mysqli_query($db_con,$query);
