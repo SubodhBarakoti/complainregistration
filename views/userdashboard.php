@@ -15,12 +15,12 @@
         <body>
             <div class="logout">
                 <button onclick="location.href='../auth/userlogout.php';">Logout</button>
-            </div>
+            </div><br><br><br><br>
             <div class="register_complain">
-                <button onclick="location.href='registercomplain.php';">Register Complain</button>
+                <button onclick="location.href='registercomplain.php';">Register a Complain</button>
             </div>
             <div class="registered_complain">
-                <div id="previous_complain">
+                <div class="heading">
                     Previous Complains
                 </div>
                 <div class="complain_table">
@@ -54,7 +54,7 @@
                                         <td><?php echo $row['complain_text']; ?></td>
                                         <td><?php echo $row1['department_name']; ?></td>
                                         <td><?php echo $row2['state_name']; ?></td>
-                                        <td><button><a href="../auth/deletecomplain.php?complain_id=<?php echo $row["complain_id"]?>">Delete</a></button></td>
+                                        <td><a href="../auth/deletecomplain.php?complain_id=<?php echo $row["complain_id"]?>">Delete</a></td>
                                     </tr>
                                 <?php
                                 }
